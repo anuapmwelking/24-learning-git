@@ -1,0 +1,22 @@
+pwd: present work directory
+cd <foldername> : go to any file
+cd.. : go out of folder
+
+git status : used to check the staged file or git initialised or not
+
+
+git config --global user.name "anupam" [used to set the name of the user]
+git config --global user.email "anupam.singh@welkinring.com" [used to set the email of the user]
+
+git config --list [used to check the user name or email]
+
+git config user.name [used to see the name of the user]
+git config user.email [used to see the email of the user]
+
+stage archtieture : working directory -> staging area -> git directory
+************
+git status
+
+git init [used to initialize a repository]
+
+git add --a [used to stage all files at one time]
