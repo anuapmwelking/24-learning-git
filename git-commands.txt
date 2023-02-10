@@ -20,3 +20,25 @@ git status
 git init [used to initialize a repository]
 
 git add --a [used to stage all files at one time]
+
+git commit -m 'initial commit'
+
+git log [to check all the log ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
