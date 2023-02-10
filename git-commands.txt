@@ -74,7 +74,7 @@ origin  https://github.com/anuapmwelking/24-learning-git.git (push)
 
 5)) now can't directly push into code
 
-****add a ssh key****
+****add a ssh key**** [https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent]
 ssh-keygen -t rsa -b 4096 -C "anupam.singh@welkinring.com"
 ->Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/Himanshu Nagpal/.ssh/id_rsa):
@@ -95,13 +95,24 @@ open the pub file -> get the  ssh key and then add the key in github profile (go
 now run [git branch -M main]
 git push -u origin main
 
+///////////////*************************///////////////////////////
+git config --global alias.st status
+
+now git st means git status
+now git ci means git commit
 
 
+**********************************
+git checkout -b develop [used to create a branch and then switch to that branch]
+git checkout master [switch to master branch]
+ 
+ --create a new branch do your changes stage them and then move back to master branch all changes will be removed--
 
+git branch [used to check all the branched in the repository]
 
+git push origin develop [used to push the branch to github]
 
-
-
+git branch -d develop [it will delete the develop branch]
 
 
 
