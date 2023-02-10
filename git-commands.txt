@@ -1,4 +1,4 @@
-pwd: present work directory
+pwd: present work directory or ls : list content
 cd <foldername> : go to any file
 cd.. : go out of folder
 
@@ -24,6 +24,76 @@ git add --a [used to stage all files at one time]
 git commit -m 'initial commit'
 
 git log [to check all the log ]
+
+git add <fileName> [only particular file user want to stage]
+
+************
+rm -rf .git [used to delete the .git folder]
+
+git clone <url> [used to clone any git repositoryN]
+*******
+
+touch error.log [used to create any empty file]
+
+touch .gitignore [used to create gitignore file ]
+
+----------
+.gitignore used to specify file user want to not upload on github
+
+like : err.log [now err.log will not be staged]
+like : *.log [all the files with .log extension will be ignored]
+like : dir/ [now dir folder will not be tracked]
+like :/dir/ [now the outer dir folder will not be tracked but if the folder with same name inside any folder present it will be tracked]
+-------
+git add . [used to stage files]
+
+*/************
+git diff used to compare the files with staging directory to committed files
+******************
+
+git commit -a -m 'this command will directly commit without staging'
+
+-******
+git rm third.txt [this will remove the third.txt from the staged area]
+git mv first.txt first_renamed.txt [this will rename the first the text]
+
+***
+git restore --- staged <filename> [this used to remove the file from staging area]
+
+***********
+git checkout -- <filename> [*************imp] [used to get the previous data after deletion]
+git checkout -f
+***************************
+1)initialize a repository on github
+2)git remote used to check any origin added or not
+3) git remote add origin https://github.com/anuapmwelking/24-learning-git.git [used to add origin]
+
+4) git remote -v used to check the remote url
+origin  https://github.com/anuapmwelking/24-learning-git.git (fetch)
+origin  https://github.com/anuapmwelking/24-learning-git.git (push)
+
+5)) now can't directly push into code
+
+****add a ssh key****
+ssh-keygen -t rsa -b 4096 -C "anupam.singh@welkinring.com"
+->Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Himanshu Nagpal/.ssh/id_rsa):
+Created directory '/c/Users/Himanshu Nagpal/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Himanshu Nagpal/.ssh/id_rsa
+Your public key has been saved in /c/Users/Himanshu Nagpal/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:cy1L2bLtcvZjWv5jWHJfmlJgFtTSdnlXBjXdETPe8jQ anupam.singh@welkinring.com
+*******
+$ eval $(ssh-agent -s)
+->Agent pid 1650
+
+now go to this folder ->/c/Users/Himanshu Nagpal/.ssh/id_rsa.pub
+open the pub file -> get the  ssh key and then add the key in github profile (go to setting add ssh key new key add file name paste the ssh key and then save
+*********
+now run [git branch -M main]
+git push -u origin main
 
 
 
